@@ -1,0 +1,10 @@
+.VisionCard{
+    width: 48%;
+}
+
+
+@media screen and (max-width: 800px) {
+    .VisionCard{
+        width: 100%;
+    }
+}

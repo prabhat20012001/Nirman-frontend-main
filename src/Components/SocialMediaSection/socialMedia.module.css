@@ -1,0 +1,31 @@
+.mainSocialMediaBox{
+    width:60px;
+    transition: .5s;
+}
+.mainSocialMediaBox:hover{
+    width:160px;
+}
+.IndividualMediabox1{
+    cursor:pointer;
+}
+.IndividualMediabox2{
+    cursor:pointer;
+}
+.IndividualMediabox3{
+    cursor:pointer;
+}
+.IndividualMediabox1:hover svg{
+    color: aqua;
+    background-color: white;
+    border-radius: 10px;
+}
+.IndividualMediabox2:hover svg{
+    color: #0a66c2;
+    background-color: white;
+    border-radius: 10px;
+}
+.IndividualMediabox3:hover svg{
+    color: purple;
+    background-color: white;
+    border-radius: 10px;
+}

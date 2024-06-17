@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+*:focus {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color:transparent;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.dropDown1:hover {
+  border: 2px solid black;
+  transition: .3s;
+}
+
+.dropDown1:hover .open {
+  display: flex;
+}
+
+.hoverEffect {
+  color: black;
+}
+
+.hoverEffect:hover {
+  background-color: rgb(52, 52, 52);
+  color: white;
+}
+
+.animate {
+  animation: ani 70s linear infinite;
+}
+
+@keyframes ani {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(var(--my-variable));
+  }
+}
+.animateSupporters {
+  animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-208%);
+  }
+}
+
+.footerInput {
+  color: white;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  font-size: medium;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgb(150, 150, 150);
+}
+
+.ModalInput {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  font-size: medium;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgb(150, 150, 150);
+}
+
+.footerInputRed {
+  color: white;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  font-size: medium;
+  background: transparent;
+  border: none;
+  border: 2px solid red;
+}
+
+.footerInputRed:hover {
+  border: 2px solid red;
+}
+
+.footerInputRed:focus {
+  outline: none;
+  border: 2px solid red;
+}
+
+
+.footerInput:hover {
+  border: 2px solid rgb(150, 150, 150);
+}
+
+.footerInput:focus {
+  outline: none;
+  border: 2px solid rgb(150, 150, 150);
+}
+
+.footerInput::placeholder {
+  color: white;
+  opacity: 80%;
+}
+
+.footerButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  transition: .5s;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.footerButton:hover {
+  background-color: rgb(150, 150, 150);
+  color: white;
+}
+
+
+@import 'https://fonts.googleapis.com/css?family=Lily+Script+One';
+
+body {
+  background: #f8f9fa;
+  font-family: 'Lily Script One';
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  perspective: 500px;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .content {
+  transition: transform 0.5s;
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  color: #03446A;
+  text-align: center;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.back {
+  background: #03446A;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* .InvolvementMainCard:hover .involvementAnimationCard{
+  animation: rotaAni 3s infinite linear;
+} */
+.InvolvementMainCard:hover .involvementAnimationCard {
+  animation: rotaAni 3s infinite linear;
+}
+
+@keyframes rotaAni {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.text-containter{
+  width: 900px;
+}
+#blogContainer img{
+
+  width: calc( 50% - 20px ) !important;
+  padding: 0 20px !important;
+  height: auto !important;
+}
+.mainEventParent img{
+  width: calc( 50% - 100px ) !important;
+  padding: 0 20px !important;
+  height: auto !important;
+}
+@media screen and (max-width:600px) {
+  .mainEventParent img{
+    width: 100% !important;
+    height: auto !important;
+    padding: 10px;
+  }
+  #blogContainer img{
+    width: 100% !important;
+    height: auto !important;
+    padding: 10px;
+  }
+  
+}
+
+.dropDownParent:hover .doubleDropDown{
+  display: flex;
+}
+
+
+
+
+.button-2 {
+  color: #fff;
+  border: 3px solid rgb(86, 79, 164);
+  background-image: -webkit-linear-gradient(30deg, rgb(86, 79, 164) 50%, transparent 50%);
+  background-image: linear-gradient(30deg, rgb(86, 79, 164) 50%, transparent 50%);
+  background-size: 800px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+  cursor: pointer;
+}
+.button-2:hover {
+  background-position: 100%;
+  color: rgb(86, 79, 164);
+}
